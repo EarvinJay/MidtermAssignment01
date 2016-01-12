@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 
@@ -36,7 +37,15 @@ public class MainActivity extends AppCompatActivity {
 // Create the adapter and set it to the AutoCompleteTextView
 
                 ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, countries);
+        textView.setThreshold(1);
                 textView.setAdapter(adapter);
+        textView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick (AdapterView<?> parent, View view, int position, long id) {
+
+            }
+        });
+
 
 
 
