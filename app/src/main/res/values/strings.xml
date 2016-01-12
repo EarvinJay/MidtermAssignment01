@@ -1,4 +1,34 @@
 <resources>
     <string name="app_name">MidtermAssignment01</string>
     <string name="action_settings">Settings</string>
+    <string-array name="countries_array">
+        <item>Afghanistan</item>
+        <item>Argentina</item>
+        <item>Bulgaria</item>
+        <item>Brazil</item>
+        <item>Cambodia</item>
+        <item>Canada</item>
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Egypt</item>
+        <item>Ecuador</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Greece</item>
+        <item>Haiti</item>
+        <item>Hong Kong</item>
+        <item>Indonesia</item>
+        <item>Israel</item>
+        <item>Japan</item>
+        <item>Jamaica</item>
+        <item>Kenya</item>
+        <item>Kazakhstan</item>
+        <item>Lebanon</item>
+        <item>Libya</item>
+        <item>Mexico</item>
+        <item>Malaysia</item>
+        <item>Nepal</item>
+        <item>New Zealand</item>
+    </string-array>
 </resources>

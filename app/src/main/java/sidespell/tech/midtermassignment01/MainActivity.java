@@ -1,5 +1,6 @@
 package sidespell.tech.midtermassignment01;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +9,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +29,18 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+                // Get a reference to the AutoCompleteTextView in the layout
+                AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.autocomplete_country);
+// Get the string array
+                String[] countries = getResources().getStringArray(R.array.countries_array);
+// Create the adapter and set it to the AutoCompleteTextView
+
+                ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, countries);
+                textView.setAdapter(adapter);
+
+
+
+
     }
 
     @Override
